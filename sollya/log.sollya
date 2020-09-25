@@ -1,0 +1,29 @@
+prec = 160;
+eps = 1b-24;
+
+f = log1p(x);
+I = [1/sqrt(2)-1; sqrt(2)-1];
+P = fpminimax(f, [|3, 4, 5, 6, 7|], [|SG...|], I, floating, absolute, x - 0.5*x^2);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P = ");
+printexpansion(P);
+
+print("E = ");
+printsingle(exp(1));
+
+print("LN_2 = ");
+printsingle(log(2));
+
+print("SQRT_2 = ");
+printsingle(sqrt(2));
+
+print("LOG2_E = ");
+printsingle(log2(exp(1)));
+
+print("LOG10_E = ");
+printsingle(log10(exp(1)));
+
+quit;

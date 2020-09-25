@@ -1,0 +1,23 @@
+prec = 160;
+eps = 1b-24;
+
+f = exp(x);
+I = [-log(2)/2; log(2)/2];
+P = fpminimax(f, [|3, 4, 5, 6, 7|], [|SG...|], I, floating, absolute, 1 + x + 0.5*x^2);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P = ");
+printexpansion(P);
+
+print("E = ");
+printsingle(exp(1));
+
+print("LN_2 = ");
+printsingle(log(2));
+
+print("LN_2_INV = ");
+printsingle(1/log(2));
+
+quit;

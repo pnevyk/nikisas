@@ -1,0 +1,24 @@
+prec = 160;
+eps = 1b-24;
+
+f = 2^x;
+I = [0; 0.5];
+P = fpminimax(f, 5, [|1,SG...|], I, floating, absolute);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P_POW2 = ");
+printexpansion(P);
+
+f = 10^x;
+I = [0; 0.5];
+P = fpminimax(f, 5, [|1,SG...|], I, floating, absolute);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P_POW10 = ");
+printexpansion(P);
+
+quit;

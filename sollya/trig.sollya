@@ -1,0 +1,43 @@
+prec = 160;
+eps = 1b-24;
+
+f = sin(x);
+I = [-pi/4; pi/4];
+P = fpminimax(f, [|3, 5, 7, 9, 11|], [|SG...|], I, floating, absolute, x + x^3);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P_SIN = ");
+printexpansion(P);
+
+f = cos(x);
+I = [-pi/4; pi/4];
+P = fpminimax(f, [|2, 4, 6, 8, 10|], [|SG...|], I, floating, absolute, 1 + x^2);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P_COS = ");
+printexpansion(P);
+
+f = tan(x);
+I = [-pi/4; pi/4];
+P = fpminimax(f, [|3, 5, 7, 9, 11|], [|SG...|], I, floating, absolute, x + x^3);
+
+print(P);
+print(supnorm(P, f, I, absolute, eps));
+
+print("P_TAN = ");
+printexpansion(P);
+
+print("PI_HALF = ");
+printsingle(pi / 2);
+
+print("PI_HALF_INV = ");
+printsingle(1 / (pi / 2));
+
+print("PI_QUARTER = ");
+printsingle(pi / 4);
+
+quit;

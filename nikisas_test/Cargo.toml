@@ -1,0 +1,11 @@
+[package]
+name = "nikisas_test"
+version = "0.1.0"
+authors = ["Petr Nevyhoštěný"]
+edition = "2018"
+
+[dependencies]
+rand = { version = "0.7", features = ["small_rng"] }
+
+[dev-dependencies]
+proptest = "0.10.1"
