@@ -2,6 +2,13 @@
 name = "nikisas"
 version = "0.1.0"
 authors = ["Petr Nevyhoštěný"]
+description = "An implementation of common mathematical functions with focus on speed and simplicity of implementation at the cost of precision, with support for `no_std` environments."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/pnevyk/nikisas"
+documentation = "https://crates.io/crates/nikisas"
+homepage = "https://crates.io/crates/nikisas"
+keywords = ["math", "functions", "approximation"]
 edition = "2018"
 
 [dependencies]

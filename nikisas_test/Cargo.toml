@@ -2,6 +2,13 @@
 name = "nikisas_test"
 version = "0.1.0"
 authors = ["Petr Nevyhoštěný"]
+description = "Utilities for testing implementation quality of mathematical functions. Computing errors for inputs randomly sampled from given interval."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/pnevyk/nikisas_test"
+documentation = "https://crates.io/crates/nikisas_test"
+homepage = "https://crates.io/crates/nikisas_test"
+keywords = ["math", "functions", "approximation", "testing"]
 edition = "2018"
 
 [dependencies]

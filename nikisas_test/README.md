@@ -37,7 +37,7 @@ UniformSample::with_count(-87.3, 88.7, 100000)
 
 ## Documentation
 
-See [documentation](https://crates.io/crates/nikisas_test) on crates.io.
+See [documentation](https://docs.rs/nikisas_test) on crates.io.
 
 ## License
 
