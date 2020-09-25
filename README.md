@@ -21,7 +21,7 @@ assert_eq!(ln(E), 1.0);
 
 ## Documentation
 
-See [documentation](https://docs.rs/nikisas_test) on crates.io.
+See [documentation](https://docs.rs/nikisas) on crates.io.
 
 ## License
 
